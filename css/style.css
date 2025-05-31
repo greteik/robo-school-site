@@ -64,6 +64,10 @@ body {
 
 /* section main */
 
+main {
+    margin-bottom: 120px;
+}
+
 .section__main {
     background-color: #141024;
 }
@@ -112,5 +116,48 @@ body {
 .main__text-button a {
     font-size: 18px;
     color: #ffffff;
+}
+
+
+/*section about */
+
+.section__about {
+    margin-bottom: 120px;
+}
+
+.about__txt {
+    max-width: 891px;
+    font-size: 30px;
+    color: #141024;
+    padding-bottom: 60px;
+}
+
+.about__row {
+    display: flex;
+    gap: 40px;
+}
+
+.about__row-item {
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.about__row-item:hover {
+    transform: translateY(5%);
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.about__row-title {
+    font-size: 70px;
+    color: #D52027;
+    font-weight: 700;
+}
+
+.about__row-text {
+    font-size: 18px;
+    color: #141024;
+    max-width: 260px;
 }
 
