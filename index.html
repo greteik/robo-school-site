@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/info__modal.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Robo school</title>
 </head>
@@ -79,6 +80,45 @@
         </div>
     </section>
 
+    <section class="section__info">
+        <div class="container">
+            <h1 class="info__title">Что вы получите после курса</h1>
+
+            <div class="info__row">
+                <div class="info__row-item">
+                    <h4 class="info__row-title">Удостоверение</h4>
+                    <p class="info__row-txt">Дающее право преподавать робототехнику
+                         для детей 6-12 лет в образовательных учреждениях</p>
+                </div>
+
+                <div class="info__row-item">
+                    <h4 class="info__row-title">Знания</h4>
+                    <p class="info__row-txt">По основам разработки учебно-методических комплексов
+                по робототехнике и программированию</p>
+                </div>
+
+                <div class="info__row-item">
+                   <h4 class="info__row-title">Практику <img src="img/info__arrow.svg" alt="" class="info-icon"></h4>
+                    <p class="info__row-txt">Возможность пройти
+                         практику по преподаванию
+                         робототехники на базе R:ED LAB
+                          (в оффлайн или онлайн формате)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-title">При наличии свободных мест</div>
+            <div class="modal-text">
+                Здесь вы можете разместить дополнительную информацию о практике, условиях участия 
+                или других важных деталях, которые должны быть видны пользователю.
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/main.js"></script>

@@ -161,3 +161,46 @@ main {
     max-width: 260px;
 }
 
+
+/* section info */
+
+.section__info {
+    background-color: #F9F9F9;
+    margin-bottom: 120px;
+    padding: 100px 0 100px 0;
+}
+
+.info__title {
+    padding-bottom: 60px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #141024;
+}
+
+.info__row {
+    display: flex;
+    gap: 40px;
+}
+
+.info__row-title {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #141024;
+}
+
+.info__row-title img {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.info__row-title img:hover {
+    transform: translateY(-17%);
+}
+
+.info__row-txt {
+    font-size: 18px;
+    color: #141024;
+    max-width: 360px;
+}
+
