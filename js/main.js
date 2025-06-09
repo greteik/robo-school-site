@@ -27,3 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+
+
+/* menu */
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.getElementById('burger');
+            const menu = document.getElementById('menu');
+            const overlay = document.getElementById('overlay');
+            
+            burger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                menu.classList.toggle('active');
+                overlay.classList.toggle('active');
+                document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+            });
+            
+            overlay.addEventListener('click', function() {
+                burger.classList.remove('active');
+                menu.classList.remove('active');
+                this.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });

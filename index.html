@@ -16,15 +16,23 @@
     <header class="header">
         <div class="header__row">
         <h1 class="logo">ROBO.SCHOOL</h1>
+
+        <button class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
         
-        <nav class="header__menu">
+        <nav class="menu" id="menu">
+            
             <ul class="header__list">
                 <li class="header__list-item"><a href="#" class="header__list-link">О школе</a></li>
                 <li class="header__list-item"><a href="#" class="header__list-link">Тренеры</a></li>
                 <li class="header__list-item"><a href="#" class="header__list-link">Стоимость</a></li>
             </ul>
         </nav>
-        <a href="tel:+7 800 000 11 22" class="header__list-tel">+7 800 000 11 22</a>
+        <div class="menu-overlay" id="overlay"></div>
+        <a href="tel:+7 800 000 11 22" class="header__list-tel"><img src="img/tel.svg" alt="">+7 800 000 11 22</a>
         </div>
     </header>
 
@@ -46,7 +54,7 @@
     </section>
     </Main>
     
-    <section class="section__about">
+     <section class="section__about">
         <div class="container">
             <p class="about__txt"><b>Robo School</b> – учреждение для формирования
                  кадрового педагогического
@@ -210,6 +218,19 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <h2 class="logo">ROBO.SCHOOL</h2>
+                    <p class="logo__text">© ROBO.SCHOOL</p>
+                </div>
+
+                <div class="footer__info">
+                    <a href="tel:+7 800 000 11 22" class="header__list-tel">+7 800 000 11 22</a>
+                </div>
+            </div>
+    </footer> 
 
     <script src="js/main.js"></script>
 </body>
