@@ -395,6 +395,12 @@ main {
     opacity: 0.8;
 }
 
+.footer__list-tel {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 30px;
+    margin-right: 100px;
+}
 
 /* адаптив */
         
@@ -427,7 +433,6 @@ main {
 @media (max-width: 1500px) {
     .main__row {
         display: grid;
-        text-align: center;
     }
 }
 
@@ -506,6 +511,16 @@ main {
 .header__list-tel {
     display: none;
 }
+
+.traners__inner {
+    overflow-x: hidden;
+}
+
+.sell__row {
+    display: flex;
+    flex-direction: column;
+}
+
 }
 
 @media (max-width: 800px) {
@@ -519,21 +534,54 @@ main {
         padding: 0;
         margin: 0px;
     }
+
+    .about__row {
+        display: grid;
+        justify-content: center;
+    }
+
+    .about__row-item:hover {
+        transform: translate(-3%);
+    }
+    
+    .traners__inner {
+        display: grid;
+        justify-content: center;
+    }
+
+    .traners__title {
+        text-align: center;
+    }
+
+    .action__inner {
+        display: grid;
+    }
 }
 
 @media (max-width: 600px) {
 
-    .main__row img {
-        width: 500px;
+    .main__title {
+        font-size: 40px;
+        padding-left: 15px;
+        padding-top: 50px;
     }
 
-    .main__title {
-        font-size: 46px;
+    .action__info-text {
+        padding-bottom: 40px;
+    }
+
+    .action__info-title {
+        text-align: center;
+    }
+    
+    .action__info-text {
         text-align: center;
     }
 
-    .main__text-item {
-        max-width: 300px;
+    .footer__inner {
+        display: grid;
+        justify-content: center;
+        gap: 20px;
     }
 }
 
@@ -544,5 +592,44 @@ main {
 
     .header {
         padding-top: 30px;
+    }
+
+    .main__row img {
+        width: 300px;
+        padding-bottom: 30px;
+    }
+
+    .main__text-item {
+        padding-left: 15px;
+    }
+
+    .main__text-button {
+        margin-left: 15px;
+    }
+
+    .info__row {
+        display: grid;
+        justify-content: center;
+    }
+
+    .info__row-item {
+        text-align: center;
+    }
+
+    .info__row-title {
+        display: inline;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .main__text-button {
+        position: absolute;
+        top: 71%;
+    }
+
+    .info__title {
+        font-size: 30px;
+        text-align: center;
     }
 }
